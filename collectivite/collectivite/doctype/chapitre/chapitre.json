@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-10 22:00:18.267335",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "section",
+  "titre",
+  "column_break_4",
+  "description",
+  "libelle",
+  "dotation"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Code"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Link",
+   "label": "Section",
+   "options": "Section"
+  },
+  {
+   "fetch_from": "section.description",
+   "fieldname": "libelle",
+   "fieldtype": "Data",
+   "label": "Libelle"
+  },
+  {
+   "fieldname": "titre",
+   "fieldtype": "Select",
+   "label": "Titre",
+   "options": "TITRE 1\nTITRE 2"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dotation",
+   "fieldtype": "Currency",
+   "label": "Dotation",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-10 22:03:49.935724",
+ "modified_by": "Administrator",
+ "module": "Collectivite",
+ "name": "Chapitre",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:numero",
+ "creation": "2023-05-10 22:33:51.631232",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "numero",
+  "groupe",
+  "nature",
+  "column_break_3",
+  "description",
+  "libelle"
+ ],
+ "fields": [
+  {
+   "fieldname": "numero",
+   "fieldtype": "Data",
+   "label": "Numero",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "groupe",
+   "fieldtype": "Link",
+   "label": "Groupe",
+   "options": "Groupe de Compte"
+  },
+  {
+   "fetch_from": "groupe.description",
+   "fieldname": "libelle",
+   "fieldtype": "Data",
+   "label": "Libelle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "groupe.nature",
+   "fieldname": "nature",
+   "fieldtype": "Data",
+   "label": "Nature",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-10 22:47:04.779686",
+ "modified_by": "Administrator",
+ "module": "Collectivite",
+ "name": "Compte",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

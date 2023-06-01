@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:BUDGET-{YYYY}",
+ "creation": "2023-05-10 22:39:47.954448",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "budget_section",
+  "titre",
+  "column_break_2",
+  "budget_ouvert",
+  "validation_section",
+  "date_prepa",
+  "column_break_5",
+  "date_vote",
+  "column_break_7",
+  "date_appro",
+  "d\u00e9tails_section",
+  "details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "titre",
+   "fieldtype": "Select",
+   "label": "Titre",
+   "options": "Titre I\nTitre II"
+  },
+  {
+   "fieldname": "budget_ouvert",
+   "fieldtype": "Select",
+   "label": "Budget Ouvert",
+   "options": "Budget Primitif\nBudget Modif No1\nBudget Modif No2\nBudget Modif No3"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Budget Compte",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "options": "Details Budget Compte"
+  },
+  {
+   "fieldname": "validation_section",
+   "fieldtype": "Section Break",
+   "label": "Validation"
+  },
+  {
+   "fieldname": "date_prepa",
+   "fieldtype": "Date",
+   "label": "Date Prepa"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_vote",
+   "fieldtype": "Date",
+   "label": "Date Vote"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_appro",
+   "fieldtype": "Date",
+   "label": "Date Appro"
+  },
+  {
+   "fieldname": "d\u00e9tails_section",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "budget_section",
+   "fieldtype": "Tab Break",
+   "label": "Budget"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-05-10 22:59:18.091989",
+ "modified_by": "Administrator",
+ "module": "Collectivite",
+ "name": "Budget Compte",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

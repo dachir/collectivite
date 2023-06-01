@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-10 22:43:05.135808",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "libelle",
+  "numero",
+  "description",
+  "nature",
+  "primitif",
+  "modif_1",
+  "modif_2",
+  "modif_3",
+  "total",
+  "date_prepa",
+  "date_vote",
+  "date_appro"
+ ],
+ "fields": [
+  {
+   "fetch_from": "numero.libelle",
+   "fieldname": "libelle",
+   "fieldtype": "Data",
+   "label": "Libelle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "numero",
+   "fieldtype": "Link",
+   "label": "Numero",
+   "options": "Compte",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "numero.description",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nature",
+   "fieldtype": "Data",
+   "label": "Nature"
+  },
+  {
+   "fieldname": "primitif",
+   "fieldtype": "Currency",
+   "label": "Primitif"
+  },
+  {
+   "fieldname": "modif_1",
+   "fieldtype": "Currency",
+   "label": "Modif 1"
+  },
+  {
+   "fieldname": "modif_2",
+   "fieldtype": "Currency",
+   "label": "Modif 2"
+  },
+  {
+   "fieldname": "modif_3",
+   "fieldtype": "Currency",
+   "label": "Modif 3"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "date_prepa",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date Prepa"
+  },
+  {
+   "fieldname": "date_vote",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date Vote"
+  },
+  {
+   "fieldname": "date_appro",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date Appro"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-10 22:52:31.212930",
+ "modified_by": "Administrator",
+ "module": "Collectivite",
+ "name": "Details Budget Compte",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
